@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firebase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="FirebaseFireStore Example"
+            android:textSize="50sp"
+            android:textColor="#FF8A80"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/etMailFire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="E-mail"
+            android:background="@drawable/style_design"
+            android:inputType="textEmailAddress"
+            android:textSize="30sp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/etPassFire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Password"
+            android:background="@drawable/style_design"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/BtnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:background="@drawable/style_design"
+            android:padding="15dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#F31E1E"/>
+    </LinearLayout>
+
+</RelativeLayout>
