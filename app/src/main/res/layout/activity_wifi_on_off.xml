@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wifi.Wifi_On_Off">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/WifiSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:background="#AFACAC"
+        android:paddingLeft="40dp"
+        android:text="UseWifi"
+        android:textSize="20sp" />
+
+</RelativeLayout>

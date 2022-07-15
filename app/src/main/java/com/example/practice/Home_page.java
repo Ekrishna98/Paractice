@@ -12,10 +12,11 @@ import com.example.practice.Shared_Preferences.Shared_Pref_main;
 import com.example.practice.TabLayout.TabLayout_Main;
 import com.example.practice.UserPermission.MutiUserPermission;
 import com.example.practice.UserPermission.Sample;
+import com.example.practice.Wifi.Wifi_On_Off;
 
 public class Home_page extends AppCompatActivity implements View.OnClickListener{
 
-    Button ListView, Recycler, TabView, SharedPref, Firebase, GridView, Userper, MultiUser,
+    Button ListView, Recycler, TabView, SharedPref,WifiSwitch, Firebase, GridView, Userper, MultiUser,
     UnitConvert;
 
     @Override
@@ -27,6 +28,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         Recycler = findViewById(R.id.BtnRecycler);
         TabView = findViewById(R.id.BtnTabView);
         SharedPref = findViewById(R.id.BtnSharedPref);
+        WifiSwitch = findViewById(R.id.BtnWifi);
         Firebase = findViewById(R.id.BtnFirebase);
         GridView = findViewById(R.id.BtnGridView);
         Userper = findViewById(R.id.BtnUserPer);
@@ -37,6 +39,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         Recycler.setOnClickListener(this);
         TabView.setOnClickListener(this);
         SharedPref.setOnClickListener(this);
+        WifiSwitch.setOnClickListener(this);
         Firebase.setOnClickListener(this);
         GridView.setOnClickListener(this);
         Userper.setOnClickListener(this);
@@ -60,6 +63,9 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.BtnSharedPref:
                 startActivity(new Intent(Home_page.this, Shared_Pref_main.class));
+                break;
+            case R.id.BtnWifi:
+                startActivity(new Intent(Home_page.this, Wifi_On_Off.class));
                 break;
             case R.id.BtnFirebase:
                 startActivity(new Intent(Home_page.this,Firebase.class));

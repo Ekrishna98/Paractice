@@ -68,6 +68,18 @@
                 android:textColor="#D81717"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/BtnWifi"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_design"
+                android:backgroundTint="#6A1B9A"
+                android:text="Wifi_ON_OFF"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/BtnFirebase"
