@@ -69,6 +69,18 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
             <Button
+                android:id="@+id/BtnNetWorkCheck"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_design"
+                android:backgroundTint="#EF6C00"
+                android:text="NetWork Check"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <Button
                 android:id="@+id/BtnWifi"
                 android:layout_width="350dp"
                 android:layout_height="100dp"

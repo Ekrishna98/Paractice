@@ -4,40 +4,45 @@ import android.content.Context;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 
 import com.example.practice.R;
 
 public class Wifi_On_Off extends AppCompatActivity {
 
-    SwitchCompat wifiswitch;
-
+    Button Wifi;
+    WifiManager wifiManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wifi_on_off);
 
-        wifiswitch = findViewById(R.id.WifiSwitch);
+        Wifi = findViewById(R.id.btnWifi);
+        wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 
-        wifiswitch.setOnClickListener(new View.OnClickListener() {
+        if(wifiManager.isWifiEnabled()){
+            Wifi.setText("Turn WIFI OFF");
+        }else if(!wifiManager.isWifiEnabled()){
+            Wifi.setText("Turn Wifi On");
+        }
+
+
+        Wifi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(wifiswitch.isChecked()){
-                    WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-                    wifi.setWifiEnabled(true);
-                }else{
-                    WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-                    wifi.setWifiEnabled(false);
-                }
+
+                if(wifiManager.isWifiEnabled()){
+                    Wifi.setText("Turn Wifi on");
+                    wifiManager.setWifiEnabled(false);
+                }else if(!wifiManager.isWifiEnabled()){
+                        Wifi.setText("Turn Wifi Off");
+                        wifiManager.setWifiEnabled(true);
+                    }
             }
         });
-
-
-
-
 
     }
 }

@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.practice.NetWorkCheck.NetWorkCheck;
 import com.example.practice.RecyclerView.RecyclerView_main;
 import com.example.practice.Shared_Preferences.Shared_Pref_main;
 import com.example.practice.TabLayout.TabLayout_Main;
@@ -16,7 +17,7 @@ import com.example.practice.Wifi.Wifi_On_Off;
 
 public class Home_page extends AppCompatActivity implements View.OnClickListener{
 
-    Button ListView, Recycler, TabView, SharedPref,WifiSwitch, Firebase, GridView, Userper, MultiUser,
+    Button ListView, Recycler, TabView, SharedPref, NetWork ,WifiSwitch, Firebase, GridView, Userper, MultiUser,
     UnitConvert;
 
     @Override
@@ -28,6 +29,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         Recycler = findViewById(R.id.BtnRecycler);
         TabView = findViewById(R.id.BtnTabView);
         SharedPref = findViewById(R.id.BtnSharedPref);
+        NetWork = findViewById(R.id.BtnNetWorkCheck);
         WifiSwitch = findViewById(R.id.BtnWifi);
         Firebase = findViewById(R.id.BtnFirebase);
         GridView = findViewById(R.id.BtnGridView);
@@ -39,6 +41,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         Recycler.setOnClickListener(this);
         TabView.setOnClickListener(this);
         SharedPref.setOnClickListener(this);
+        NetWork.setOnClickListener(this);
         WifiSwitch.setOnClickListener(this);
         Firebase.setOnClickListener(this);
         GridView.setOnClickListener(this);
@@ -64,11 +67,11 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
             case R.id.BtnSharedPref:
                 startActivity(new Intent(Home_page.this, Shared_Pref_main.class));
                 break;
+            case R.id.BtnNetWorkCheck:
+                startActivity(new Intent(Home_page.this, NetWorkCheck.class));
+                break;
             case R.id.BtnWifi:
                 startActivity(new Intent(Home_page.this, Wifi_On_Off.class));
-                break;
-            case R.id.BtnFirebase:
-                startActivity(new Intent(Home_page.this,Firebase.class));
                 break;
             case R.id.BtnGridView:
                 startActivity(new Intent(Home_page.this,Grid_View.class));
