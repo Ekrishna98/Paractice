@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.practice.AlertPassword.AlertPassword;
 import com.example.practice.BroadcastDemo.BroadCastExample;
 import com.example.practice.NetWorkCheck.NetWorkCheck;
 import com.example.practice.RecyclerView.RecyclerView_main;
@@ -20,7 +21,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
 
     Button ListView, Recycler, TabView, SharedPref, NetWork ,WifiSwitch, Firebase, GridView, Userper, MultiUser,
     UnitConvert;
-    Button BroadCast;
+    Button BroadCast, AlertCheck;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         ListView = findViewById(R.id.BtnListView);
         Recycler = findViewById(R.id.BtnRecycler);
         TabView = findViewById(R.id.BtnTabView);
+        AlertCheck = findViewById(R.id.BtnAlert);
         BroadCast = findViewById(R.id.BtnBroadCast);
         SharedPref = findViewById(R.id.BtnSharedPref);
         NetWork = findViewById(R.id.BtnNetWorkCheck);
@@ -42,6 +44,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         ListView.setOnClickListener(this);
         Recycler.setOnClickListener(this);
         TabView.setOnClickListener(this);
+        AlertCheck.setOnClickListener(this);
         BroadCast.setOnClickListener(this);
         SharedPref.setOnClickListener(this);
         NetWork.setOnClickListener(this);
@@ -66,6 +69,9 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.BtnTabView:
                 startActivity(new Intent(Home_page.this, TabLayout_Main.class));
+                break;
+            case R.id.BtnAlert:
+                startActivity(new Intent(Home_page.this, AlertPassword.class));
                 break;
             case R.id.BtnBroadCast:
                 startActivity(new Intent(Home_page.this, BroadCastExample.class));

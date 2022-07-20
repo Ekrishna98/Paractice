@@ -27,6 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
         <activity
+            android:name=".AlertPassword.AlertPassword"
+            android:exported="false" />
+        <activity
             android:name=".BroadcastDemo.BroadCastExample"
             android:exported="false" />
         <activity
