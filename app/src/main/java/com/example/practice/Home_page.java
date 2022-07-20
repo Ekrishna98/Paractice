@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.practice.BroadcastDemo.BroadCastExample;
 import com.example.practice.NetWorkCheck.NetWorkCheck;
 import com.example.practice.RecyclerView.RecyclerView_main;
 import com.example.practice.Shared_Preferences.Shared_Pref_main;
@@ -19,7 +20,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
 
     Button ListView, Recycler, TabView, SharedPref, NetWork ,WifiSwitch, Firebase, GridView, Userper, MultiUser,
     UnitConvert;
-
+    Button BroadCast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         ListView = findViewById(R.id.BtnListView);
         Recycler = findViewById(R.id.BtnRecycler);
         TabView = findViewById(R.id.BtnTabView);
+        BroadCast = findViewById(R.id.BtnBroadCast);
         SharedPref = findViewById(R.id.BtnSharedPref);
         NetWork = findViewById(R.id.BtnNetWorkCheck);
         WifiSwitch = findViewById(R.id.BtnWifi);
@@ -40,6 +42,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         ListView.setOnClickListener(this);
         Recycler.setOnClickListener(this);
         TabView.setOnClickListener(this);
+        BroadCast.setOnClickListener(this);
         SharedPref.setOnClickListener(this);
         NetWork.setOnClickListener(this);
         WifiSwitch.setOnClickListener(this);
@@ -63,6 +66,9 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.BtnTabView:
                 startActivity(new Intent(Home_page.this, TabLayout_Main.class));
+                break;
+            case R.id.BtnBroadCast:
+                startActivity(new Intent(Home_page.this, BroadCastExample.class));
                 break;
             case R.id.BtnSharedPref:
                 startActivity(new Intent(Home_page.this, Shared_Pref_main.class));
