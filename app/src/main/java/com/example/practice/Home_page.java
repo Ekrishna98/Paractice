@@ -21,7 +21,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
 
     Button ListView, Recycler, TabView, SharedPref, NetWork ,WifiSwitch, Firebase, GridView, Userper, MultiUser,
     UnitConvert;
-    Button BroadCast, AlertCheck;
+    Button BroadCast, AlertCheck, Custom_Tab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         TabView = findViewById(R.id.BtnTabView);
         AlertCheck = findViewById(R.id.BtnAlert);
         BroadCast = findViewById(R.id.BtnBroadCast);
+        Custom_Tab = findViewById(R.id.BtnCustom_Tab);
         SharedPref = findViewById(R.id.BtnSharedPref);
         NetWork = findViewById(R.id.BtnNetWorkCheck);
         WifiSwitch = findViewById(R.id.BtnWifi);
@@ -45,6 +46,7 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         Recycler.setOnClickListener(this);
         TabView.setOnClickListener(this);
         AlertCheck.setOnClickListener(this);
+        Custom_Tab.setOnClickListener(this);
         BroadCast.setOnClickListener(this);
         SharedPref.setOnClickListener(this);
         NetWork.setOnClickListener(this);
@@ -72,6 +74,9 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.BtnAlert:
                 startActivity(new Intent(Home_page.this, AlertPassword.class));
+                break;
+            case R.id.BtnCustom_Tab:
+                startActivity(new Intent(Home_page.this, chrome_tab.class));
                 break;
             case R.id.BtnBroadCast:
                 startActivity(new Intent(Home_page.this, BroadCastExample.class));

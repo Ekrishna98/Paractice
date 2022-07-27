@@ -81,6 +81,18 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/BtnCustom_Tab"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_design"
+                android:backgroundTint="#C62828"
+                android:text="Custom_Tabs"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/BtnSharedPref"

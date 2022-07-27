@@ -45,6 +45,7 @@ public class AlertPassword extends AppCompatActivity {
             @Override
             public void onClick(View v) {
             alertDialog.dismiss();
+            alertDialog.cancel();
             }
         });
         ok.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +57,7 @@ public class AlertPassword extends AppCompatActivity {
 
                 if (PassCheck.matches(Password)) {
                     startActivity(new Intent(AlertPassword.this, Home_page.class));
+                    finish();
                 } else {
                     Toast.makeText(AlertPassword.this, "Enter Wrong Password..", Toast.LENGTH_SHORT).show();
                 }

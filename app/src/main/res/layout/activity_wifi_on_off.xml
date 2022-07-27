@@ -7,12 +7,15 @@
     android:orientation="vertical"
     tools:context=".Wifi.Wifi_On_Off">
 
-    <Button
+    <Switch
+        android:id="@+id/btnWifi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:layout_gravity="center"
-        android:id="@+id/btnWifi"/>
-
+        android:text="Turn Wifi"
+        android:textOn="On"
+        android:textOff="Off"/>
 
 
 </LinearLayout>
