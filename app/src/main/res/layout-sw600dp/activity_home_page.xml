@@ -93,6 +93,30 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/BtnApiCalling"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_design"
+                android:backgroundTint="#FF8A80"
+                android:text="Api-Calling"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/BtnHideSystemBar"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_design"
+                android:backgroundTint="#6A1B9A"
+                android:text="HideSystemBars"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/BtnSharedPref"

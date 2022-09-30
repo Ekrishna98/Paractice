@@ -8,8 +8,11 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.practice.AlertPassword.AlertPassword;
+import com.example.practice.ApiCalling.DemoApiCalling;
 import com.example.practice.BroadcastDemo.BroadCastExample;
+import com.example.practice.HideSystemBar.Hide_SystemBars;
 import com.example.practice.NetWorkCheck.NetWorkCheck;
+import com.example.practice.QRCodeGenerate.QRCode_Generator;
 import com.example.practice.RecyclerView.RecyclerView_main;
 import com.example.practice.Shared_Preferences.Shared_Pref_main;
 import com.example.practice.TabLayout.TabLayout_Main;
@@ -17,22 +20,27 @@ import com.example.practice.UserPermission.MutiUserPermission;
 import com.example.practice.UserPermission.Sample;
 import com.example.practice.Wifi.Wifi_On_Off;
 
+import javax.xml.namespace.QName;
+
 public class Home_page extends AppCompatActivity implements View.OnClickListener{
 
     Button ListView, Recycler, TabView, SharedPref, NetWork ,WifiSwitch, Firebase, GridView, Userper, MultiUser,
     UnitConvert;
-    Button BroadCast, AlertCheck, Custom_Tab;
+    Button BroadCast, AlertCheck, Custom_Tab , ApiDemo ,HideSystemBars, QRCode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
         ListView = findViewById(R.id.BtnListView);
+        QRCode = findViewById(R.id.BtnQRCode);
         Recycler = findViewById(R.id.BtnRecycler);
         TabView = findViewById(R.id.BtnTabView);
         AlertCheck = findViewById(R.id.BtnAlert);
         BroadCast = findViewById(R.id.BtnBroadCast);
         Custom_Tab = findViewById(R.id.BtnCustom_Tab);
+        ApiDemo = findViewById(R.id.BtnApiCalling);
+        HideSystemBars = findViewById(R.id.BtnHideSystemBar);
         SharedPref = findViewById(R.id.BtnSharedPref);
         NetWork = findViewById(R.id.BtnNetWorkCheck);
         WifiSwitch = findViewById(R.id.BtnWifi);
@@ -43,11 +51,14 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
         UnitConvert = findViewById(R.id.BtnUnitConert);
 
         ListView.setOnClickListener(this);
+        QRCode.setOnClickListener(this);
         Recycler.setOnClickListener(this);
         TabView.setOnClickListener(this);
         AlertCheck.setOnClickListener(this);
         Custom_Tab.setOnClickListener(this);
         BroadCast.setOnClickListener(this);
+        ApiDemo.setOnClickListener(this);
+        HideSystemBars.setOnClickListener(this);
         SharedPref.setOnClickListener(this);
         NetWork.setOnClickListener(this);
         WifiSwitch.setOnClickListener(this);
@@ -66,6 +77,9 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
             case R.id.BtnListView:
             startActivity(new Intent(Home_page.this,List_view.class));
             break;
+            case R.id.BtnQRCode:
+                startActivity(new Intent(Home_page.this, QRCode_Generator.class));
+                break;
             case R.id.BtnRecycler:
                 startActivity(new Intent(Home_page.this, RecyclerView_main.class));
                 break;
@@ -75,14 +89,17 @@ public class Home_page extends AppCompatActivity implements View.OnClickListener
             case R.id.BtnAlert:
                 startActivity(new Intent(Home_page.this, AlertPassword.class));
                 break;
-            case R.id.BtnCustom_Tab:
-                startActivity(new Intent(Home_page.this, chrome_tab.class));
-                break;
             case R.id.BtnBroadCast:
                 startActivity(new Intent(Home_page.this, BroadCastExample.class));
                 break;
+            case R.id.BtnApiCalling:
+                startActivity(new Intent(Home_page.this, DemoApiCalling.class));
+                break;
             case R.id.BtnSharedPref:
                 startActivity(new Intent(Home_page.this, Shared_Pref_main.class));
+                break;
+            case R.id.BtnHideSystemBar:
+                startActivity(new Intent(Home_page.this, Hide_SystemBars.class));
                 break;
             case R.id.BtnNetWorkCheck:
                 startActivity(new Intent(Home_page.this, NetWorkCheck.class));

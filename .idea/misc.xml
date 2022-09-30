@@ -3,18 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/drawable/style_design.xml" value="0.1315" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout-sw600dp/activity_home_page.xml" value="0.153125" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/activity_bluetooth_demo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/activity_fragments_demo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/activity_home_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/activity_main3.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/activity_shared_pref_main.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/demo_api_callling.xml" value="0.15234375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/fragment_chats.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/fragment_fragment1.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/fragment_fragment2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Paractice/app/src/main/res/layout/qrcode_generator.xml" value="0.209375" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/drawable/style_design.xml" value="0.1565" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout-sw600dp/activity_home_page.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_alert_password.xml" value="0.1" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_broad_cast_example.xml" value="0.1675929884566054" />
-        <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_chrome_tab.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_firebase.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_home_page.xml" value="0.16" />
-        <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_home_page2.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_list_view.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_net_work_check.xml" value="0.15604959384352288" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_tab_layout_main.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_wifi_on_off.xml" value="0.2" />
+        <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/activity_wifi_on_off.xml" value="0.18" />
         <entry key="..\:/Users/user02/AndroidStudioProjects/Practice/app/src/main/res/layout/alertbox.xml" value="0.1" />
         <entry key="..\:/Users/user02/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.10208333333333333" />
       </map>
